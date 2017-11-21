@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_content"
+    android:orientation="vertical"
+    tools:context=".activitys.LoginActivity">
+
+    <include layout="@layout/skr_layout_top_title_view" />
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:drawableLeft="@mipmap/img_login_user"
+        android:drawablePadding="10dp"
+        android:hint="手机号"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@color/color_text_gray_g"
+        android:textColorHint="@color/color_text_gray_h"
+        android:textSize="@dimen/textsize_8" />
+
+    <View style="@style/SKR_Style_LineView" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:drawableLeft="@mipmap/img_login_pass"
+        android:drawablePadding="10dp"
+        android:hint="6-16位密码"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/color_text_gray_g"
+        android:textColorHint="@color/color_text_gray_h"
+        android:textSize="@dimen/textsize_8" />
+
+    <TextView
+        android:id="@+id/login_forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="忘记密码"
+        android:textColor="@color/color_text_gray_g"
+        android:textSize="@dimen/textsize_7" />
+
+    <Button
+        android:id="@+id/login_my_logbutt"
+        style="@style/SKR_Style_Button_Theme"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="140dp"
+        android:text="登录" />
+
+
+</LinearLayout>

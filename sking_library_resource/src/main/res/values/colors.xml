@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#13c98c</color>
+    <color name="colorPrimaryDark">#13c98c</color>
+    <color name="colorPrimaryPress">#B36bedc2</color>
+    <color name="colorAccent">#13c98c</color>
+    <color name="statusBarColor">#13c98c</color>
+    <color name="textColorPrimary">#6F6F6F</color>
+    <color name="windowBackground">#fcf9f3</color>
+    <color name="navigationBarColor">#13c98c</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_p">#B3FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black_p">#B3000000</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_red_p">#B3FF0000</color>
+    <color name="color_yellow">#FFFF00</color>
+    <color name="color_yellow_p">#B3FFFF00</color>
+    <color name="color_green">#00AA00</color>
+    <color name="color_green_p">#B300AA00</color>
+    <color name="color_blue">#0000AA</color>
+    <color name="color_blue_p">#B30000AA</color>
+    <color name="color_purple">#AE00AE</color>
+    <color name="color_purple_p">#B3AE00AE</color>
+    <color name="color_pink">#FF0088</color>
+    <color name="color_pink_p">#B3FF0088</color>
+    <color name="color_orange">#FF8C00</color>
+    <color name="color_orange_p">#B3FF8C00</color>
+
+    <color name="color_content">#fcf9f3</color>
+    <color name="color_text_gray_h">#D4D4D4</color>
+    <color name="color_text_gray_g">#6F6F6F</color>
+    <color name="color_text_gray_d">#666666</color>
+    <color name="color_line_gray">#f7f6f6</color>
+    <color name="color_line_gray_d">#eaeaea</color>
+    <color name="color_view_unenable">#A9A9A9</color>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="color_transparent_ten_percent">#1A000000</color>
+    <color name="color_transparent_twenty_percent">#33000000</color>
+    <color name="color_transparent_thirty_percent">#4D000000</color>
+    <color name="color_transparent_forty_percent">#66000000</color>
+    <color name="color_transparent_fifty_percent">#80000000</color>
+    <color name="color_transparent_sixty_percent">#99000000</color>
+    <color name="color_transparent_seventy_percent">#B3000000</color>
+    <color name="color_transparent_eighty_percent">#CC000000</color>
+    <color name="color_transparent_ninety_percent">#E6000000</color>
+
+
+</resources>

@@ -1,0 +1,97 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--TextView基础样式-->
+    <style name="SKR_Style_Textview_White">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_8</item>
+        <item name="android:textColor">@color/color_text_gray_g</item>
+        <item name="android:textColorHint">@color/color_text_gray_h</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!--Button基础样式-->
+    <style name="SKR_Style_Button_Theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_8</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@drawable/skr_bg_button_theme</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:stateListAnimator">@null</item>-->
+    </style>
+
+    <!--ImageView基础样式-->
+    <style name="SKR_Style_ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@mipmap/ic_launcher</item>
+    </style>
+
+    <!--线条基础样式-->
+    <style name="SKR_Style_LineView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_line_gray</item>
+    </style>
+
+    <!--LineLayout基础样式-->
+    <style name="SKR_Style_LinearLayout_Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!--LineLayout基础样式-->
+    <style name="SKR_Style_LinearLayout_Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!--Dialog基础样式-->
+    <style name="SKR_Style_Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/color_transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFrame">@null</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+
+    </style>
+
+    <!--popuwindow基础样式-->
+    <style name="SKR_Style_PopuWindow_Bottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/skr_animal_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/skr_animal_bottom_out</item>
+    </style>
+
+</resources>

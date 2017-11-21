@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#02c7a3</color>
+    <color name="colorPrimaryPress">#02c7a3</color>
+    <color name="colorPrimaryDark">#02c7a3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_tab_c">#F8F8F8</color>
+    <color name="bg_tab_n">#DFDFDF</color>
+
+</resources>

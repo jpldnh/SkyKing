@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jwapp.demo.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/main_butt_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二维码" />
+    <Button
+        android:id="@+id/main_butt_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轮播图，相册" />
+    <Button
+        android:id="@+id/main_butt_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频拍摄" />
+    <Button
+        android:id="@+id/main_butt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择时间" />
+    <Button
+        android:id="@+id/main_butt_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单行选择" />
+
+    <Button
+        android:id="@+id/main_butt_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dialog弹窗" />
+    <Button
+        android:id="@+id/main_butt_new_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新控件" />
+    <Button
+        android:id="@+id/main_butt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试" />
+</LinearLayout>

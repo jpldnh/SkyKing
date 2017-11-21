@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.skingapp.commen">
+
+    <!-- permissions start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 使用定位功能所需权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 百度推送权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+
+    <application
+        android:name=".bases.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="name,icon,label,theme">
+
+        <!--适配android 7.0私有权限-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"><!-- 修改成项目包名 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--适配android 7.0私有权限 end-->
+
+        <!-- 高德相关 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7f368688ed20268cd2f8095dc78df0c0" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德相关end -->
+
+        <!-- 支付相关 -->
+        <!-- 微信分享回调 -->
+        <!-- <activity -->
+        <!-- android:name=".wxapi.WXEntryActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <!-- 支付end -->
+
+        <!-- hotfix start -->
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24651440-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="814514f73e90e1366b53ce75269d92f4" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDqwuf/RBXVxlyQWxB2SMYicWCC3zcel4cK30rNbVQJg8O/tzSuSnip4ngk1/rjxCPavE/Xx3TDTTDVh/Cbh10j0rzKWmnN17udFU2yjK/G3SmIQ9OCdnHlZ25F3ioah1Tc2eFgcqEgqaZ/pyuPyeiSzzfYb6XB8eFP6VYd+ea0FlB1cmga+hRXKw1fY/IWsmbNZz89ojUbb9Yb/Xzv0YInlGhFQocTFWSZkIYOzdNMZr9Z0YPfHGOheqk5RhfKT4eM4YvSCVWkuooADWuPLKryAp8OW1TzwhwOAFw3AGNQ/Naa7+jwniIu/aVWn8BEmzqqjaY57D0lm9JzFjRD6hzHAgMBAAECggEBALvPfeabw5QogzkBgWP/yHMZnQpWJTSWKPUruh4qTsbl4R5pJP4imfHfOhrPpum8qqp9aKrJ6MGt6VmKzZS/cGYOW/bO6kJBStjaiDRFlQJVQLrA+F8w/uF2I6RFng1nIx8kN8f/LKSC1K7fQFxiPWvl11mRyFwmdAiINdr5Z/W9M75DIFnrzC+TUqnKbk1DI2Z3ms3fdhdy2y/sZ56dbUkMN6SQnVOfZHFWkYx1Z+om6nFEy5cp+l/3iSLTd6I4yt985BJysoIIUzJ6kOCAFmtNurZJ3gtrwqiaa+1N8zsRLsBvZaSrs/EQVqmRFSQL4wA+E9eCLflmyqCHz5HeFlECgYEA/48HJIfiN1Vsbx3nf1s9j0D17JjLQPz3PHPf0Mm6hye8cKyIoFpUQ2w/nsvFElxvxtFt04u/nqkAO7D2wk+olRIXvFkDd2md0DQHJH/kxfYinq0lgXzCVuURVmGzgv+TcSMoFPHTtqD9whNIUnFQCGo3F19kSb64F4bPDqamNKMCgYEA6yqvRujDrN3PcVvbbQ9fjNhfnyiLWZs9LzXD2j8LhrDujRnfUqNTWz0QDAiI5zhLAkwZ/q70RajLAa59WyKB7lP2VUMQuPjrEoz/8WbzLNS3C5mfRW44kLpJUiQyEU5aZchBq67xNI/dBs9AbZNiSU6KoHFyCi1HnE1OB/LXVY0CgYBFZwxjiVuP92z5SD/EQH0ZWGTxGhWo0oo6KqXPx9kWN15foxt/oMhdfxpP/7rHX78jWWDgIIWriu37R/Xbk1KPGVjE18+vMEmhb1+5M9pnQI7qVM9ouP72JkNtGB9uJgZepVOPTJVYdaQ0fpQXf5pijqXjfQ55UIgiK4Qz0GI2zQKBgQDEJq5cbvoHzluhKgU0SoZgbHoVvzO8Ygf+wNHD0KJEjn/roZDs1N5KU/x2jQfkFMg7+k4UaMnG8Kujk29r/LRzngTxySbBop4wsvso174tvp+PRWvb9buovDk8EoTQepJcI1TjZuA5/2VUsLoEq9JnYuOuP/HnGy2H6dMUPjHuYQKBgQC0DYrMyNfZAD/lAtYzeyW1N3IBzIjOMElaaz3gFMks7DQ36W8W+fGQrN5cjb+9HQl/4M4/xSmdt9ISYZj5xp+seZlH3YTAJrw4i8f5rEKAlNOcJM5pJ61Klqi962e0SleTKulHCPqZ4ZgnzH5jIBDu/DV/hn4ZE/yUxffwDtIk6Q==" />
+        <!-- hotfix end -->
+
+        <!-- 极光推送 start -->
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="7fe0024a13b0d0ebe72f7dc1" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false"><!-- 修改成项目包名 -->
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="${applicationId}" /><!-- 修改成项目包名 -->
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <receiver android:name=".jpush.MyJPushMessageReceiver"><!-- 修改成项目包名 -->
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="${applicationId}" /><!-- 修改成项目包名 -->
+            </intent-filter>
+        </receiver>
+
+        <!-- 极光推送 end -->
+
+
+        <!-- 项目Activity start -->
+        <activity
+            android:name=".activitys.StartActivity"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- webview以http协议打开app <a href="app://com.skingapp.commen?params=sking">打开app页面</a> -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:scheme="http" /><!-- 修改成项目包名 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".activitys.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.AdviceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.PassWordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.RegisterFirstActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.RegisterSecondActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.PerfectInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

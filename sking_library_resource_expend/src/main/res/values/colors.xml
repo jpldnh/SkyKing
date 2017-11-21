@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#13c98c</color>
+    <color name="colorPrimaryDark">#13c98c</color>
+    <color name="colorPrimaryPress">#B36bedc2</color>
+    <color name="colorAccent">#13c98c</color>
+    <color name="statusBarColor">#13c98c</color>
+    <color name="textColorPrimary">#13c98c</color>
+    <color name="windowBackground">#13c98c</color>
+    <color name="navigationBarColor">#13c98c</color>
+
+
+</resources>

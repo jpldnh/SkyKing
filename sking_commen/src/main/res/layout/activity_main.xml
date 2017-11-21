@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_content"
+    android:orientation="vertical"
+    tools:context=".activitys.MainActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/color_white" />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/bg_tab_firstpage"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="市场通"
+            android:textColor="@color/skr_color_selector_text_tab"
+            android:textSize="@dimen/textsize_6" />
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/bg_tab_second"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="市场动态"
+            android:textColor="@color/skr_color_selector_text_tab"
+            android:textSize="@dimen/textsize_6" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/bg_tab_third"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="我的空间"
+            android:textColor="@color/skr_color_selector_text_tab"
+            android:textSize="@dimen/textsize_6" />
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/bg_tab_mine"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="个人中心"
+            android:textColor="@color/skr_color_selector_text_tab"
+            android:textSize="@dimen/textsize_6" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skr_style_rectangle_corner"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/dialog_run_man_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/skr_animal_progress_run_man"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-15dp"/>
+
+    <TextView
+        android:id="@+id/dialog_run_man_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/skr_string_loading_your_life"
+        android:textSize="@dimen/textsize_9"
+        android:textColor="@color/color_text_gray_g"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:singleLine="true"
+        />
+</LinearLayout>

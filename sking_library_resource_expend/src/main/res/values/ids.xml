@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="QR_CODE_QUIT" type="id" />
+    <item name="QR_CODE_AUTO_FOCUS" type="id" />
+    <item name="QR_CODE_RESTART_PREVIEW" type="id" />
+    <item name="QR_CODE_DECODE" type="id" />
+    <item name="QR_CODE_DECODE_SUCCEEDED" type="id" />
+    <item name="QR_CODE_DECODE_FAILED" type="id" />
+    <item name="QR_CODE_RETURN_SCAN_RESULT" type="id" />
+    <item name="QR_CODE_LAUNCH_PRODUCT_QUERY" type="id" />
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.sking.lib.res.views.SKRScrollView
+        android:id="@+id/bottom_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_transparent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/popu_scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_transparent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bottom_submit_butt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/skr_bg_button_theme"
+                android:text="确定"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_11"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.sking.lib.res.views.SKRScrollView>
+
+</LinearLayout>

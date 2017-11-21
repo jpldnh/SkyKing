@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Jw Library</string>
+    <string name="skr_string_msg_data">服务器出错了</string>
+    <string name="skr_string_msg_http">您的网络不给力啊</string>
+    <string name="skr_string_msg_nonet">木有网络，请检查网络设置</string>
+    <string name="skr_string_left">left</string>
+    <string name="skr_string_right">right</string>
+    <string name="skr_string_top">top</string>
+    <string name="skr_string_bottom">bottom</string>
+    <string name="skr_string_confirm">确定</string>
+    <string name="skr_string_cancel">取消</string>
+    <string name="skr_string_runing_loading">加载中...</string>
+    <string name="skr_string_confirm_payment">确认支付</string>
+    <string name="skr_string_opreation_success">操作成功</string>
+    <string name="skr_string_loading_your_life">玩命加载中...</string>
+    <string name="skr_string_please_select">请选择</string>
+    <string name="skr_string_please_input_password">请输入密码</string>
+    <string name="skr_string_year">年</string>
+    <string name="skr_string_month">月</string>
+    <string name="skr_string_day">日</string>
+    <string name="skr_string_hour">时</string>
+    <string name="skr_string_minute">分</string>
+    <string name="skr_string_second">秒</string>
+
+</resources>

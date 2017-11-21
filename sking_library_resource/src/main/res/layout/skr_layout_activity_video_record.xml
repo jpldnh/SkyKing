@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="1">
+
+        <SurfaceView
+            android:id="@+id/record_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/record_send_butt"
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/skr_bg_button_record_video_confirm" />
+
+        <Button
+            android:id="@+id/record_start_and_stop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/skr_bg_button_record_video_record"
+            android:scaleType="center" />
+
+        <Button
+            android:id="@+id/record_send_cancle"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/skr_bg_button_record_video_cancle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <Chronometer
+            android:id="@+id/record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:format="%s"
+            android:textColor="@color/color_red"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/record_switch_butt"
+            android:layout_width="38dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/skr_bg_button_record_video_switch_camera"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+</FrameLayout>

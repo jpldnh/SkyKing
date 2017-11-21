@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/skr_layout_top_title_view" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:textColor="@color/color_text_gray_g"
+        android:textColorHint="@color/color_text_gray_h"
+        android:textSize="@dimen/textsize_8" />
+
+    <View style="@style/SKR_Style_LineView" />
+
+    <EditText
+        android:id="@+id/repeat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white"
+        android:hint="请输入确认密码"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:textColor="@color/color_text_gray_g"
+        android:textColorHint="@color/color_text_gray_h"
+        android:textSize="@dimen/textsize_8" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/SKR_Style_Button_Theme"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:enabled="false"
+        android:text="确定" />
+
+</LinearLayout>

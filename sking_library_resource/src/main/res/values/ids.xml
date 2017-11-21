@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="TAG" type="id" />
+    <item name="TAG_ID" type="id" />
+    <item name="TAG_KEYID" type="id" />
+    <item name="TAG_TYPE" type="id" />
+    <item name="TAG_STATE" type="id" />
+    <item name="TAG_PATH" type="id" />
+    <item name="TAG_POSITION" type="id" />
+    <item name="TAG_VIEW" type="id" />
+    <item name="TAG_VIEW_TEXT" type="id" />
+    <item name="TAG_VIEW_IMAGE" type="id" />
+    <item name="TAG_VIEW_BUTTON" type="id" />
+    <item name="TAG_DIRECTION_LEFT" type="id" />
+    <item name="TAG_DIRECTION_RIGHT" type="id" />
+    <item name="TAG_DIRECTION_TOP" type="id" />
+    <item name="TAG_DIRECTION_BOTTOM" type="id" />
+
+</resources>

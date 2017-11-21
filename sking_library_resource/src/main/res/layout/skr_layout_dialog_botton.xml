@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_root_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skr_style_rectangle_corner"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="70dp"
+        android:minWidth="210dp">
+
+        <TextView
+            android:id="@+id/dialog_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="请稍后"
+            android:textColor="@color/color_text_gray_g"
+            android:textSize="@dimen/textsize_8" />
+    </LinearLayout>
+
+    <View style="@style/SKR_Style_LineView" />
+
+    <Button
+        android:id="@+id/dialog_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/skr_bg_button_dialog_confirm"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/color_text_gray_g"
+        android:textSize="@dimen/textsize_8" />
+
+
+    <LinearLayout
+        android:id="@+id/dialog_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/dialog_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/skr_bg_button_dialog_negative"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_text_gray_g"
+            android:textSize="@dimen/textsize_8" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_line_gray" />
+
+        <Button
+            android:id="@+id/dialog_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/skr_bg_button_dialog_positive"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/color_text_gray_g"
+            android:textSize="@dimen/textsize_8" />
+    </LinearLayout>
+</LinearLayout>

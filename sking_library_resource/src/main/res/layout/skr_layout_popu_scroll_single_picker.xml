@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_transparent_thirty_percent"
+    android:gravity="center_horizontal|bottom">
+
+    <ScrollView
+        android:id="@+id/popu_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/pop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bottom_layout_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray" />
+
+            <Button
+                android:id="@+id/botom_butt_negitive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/skr_bg_button_popuwindow_cancle"
+                android:text="取消"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textsize_8" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
